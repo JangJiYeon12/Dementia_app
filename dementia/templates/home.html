@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+         <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        button {
+            border:3px solid skyblue;
+            background-color: rgba(0,0,0,0);
+            color: skyblue;
+            padding: 5px;
+
+        }
+    </style>
+  
+    <body>
+
+        <center>
+
+        <h1> Dementia TEST </h1><br>
+        <img src='static\1.jpg' alt="1"><br><br>
+
+        <p> 본 테스트는 의학적인 목적으로 행하는 테스트가 아닙니다.</p>
+        <p> 치매 예방과 경각심을 위한 것이므로 실제 치매가 의심되는 분들은 치매 선별검사로 이용되는 SDQ테스트를 이용바랍니다 </p>
+        <a href="https://www.sejong.go.kr/health/sub05_03_08.do">SDQ 테스트 하러가기</a><br><br>
+        <p> 갤럭시 삼성 헬스 앱을 기준으로 만들어졌으며, 워치나 갤럭시핏 등 웨어러블과 연동되는 수면정보가 필요합니다. </p>
+    
+        <p> 갤럭시라면 삼성 헬스를 켜서 작성해주세요! 아이폰은 모르겠음! </p><br>
+
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b><br><br> 평균 걸음 수 :  <input type="text", name='a', placeholder="하루 만보가 목표!"> <br><br>
+            숨이찰 정도의 운동(하루평균 min) :  <input type="text", name='b', placeholder="숫자만 기입해주세요!"> <br><br>
+            잠자는  총 시간(min) :  <input type="text", name='c', placeholder="8시간은 잠자기!"> <br><br>
+            수면 중 깸 + 렘 수면(min) :  <input type="text", name='d', placeholder="대충!"> <br><br>
+            얕은 수면 시간(min) :  <input type="text", name='e', placeholder="어제 데이터도 가능!"> <br><br>
+            깊은 수면 시간(min) :  <input type="text", name='f', placeholder="이하동문!"> <br><br>
+            수면 중 깸 / 수면 시간 X 100(%) :  <input type="text", name='g', placeholder="9%가 이상적!"> <br><br>
+            수면 중 평균 심박 수 :  <input type="text", name='h', placeholder="모르면 60으로!"> <br><br>
+            수면 점수 : <input type="text", name='i', placeholder="20_29세 평균-82점"> <br><br><br></b>
+            <button onclick="location.href='after.html'">제출</button >
+        </form>
+
+
+        
+    </center>
+
+    </body>
+</html>
